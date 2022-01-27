@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "Suite">
+    <listeners>
+        <listener class-name = "TestNG.Listener" />
+    </listeners>
+
+    <test name = "Listeners">
+        <classes>
+            <class name = "Execution.ExecuteTest" >
+                <methods>
+                    <include name="OpenBrowserAndVerifyUI" />
+                    <include name="ClickCustomerLoginAndSelectName" />
+                    <include name="ClickLoginButton" />
+                    <include name="SelectAccountNumber" />
+                    <include name="AddDepositAmount" />
+                    <include name="WithdrawTheAmount" />
+                    <include name="VerifyTransactionsDetails" />
+                    <include name="ClickLogOutAndCloseBrowser" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
